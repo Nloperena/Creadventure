@@ -1,0 +1,54 @@
+::-webkit-scrollbar {
+        width: 8px;
+}
+  
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000; 
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+}
+
+h1 {
+    font-size:30px;
+}
+
+.btn, .btn-large {
+    box-shadow: none;
+    border: 0px none transparent;
+}
+
+.btn:hover {
+    box-shadow: none;
+    border: 0px none transparent;
+}
+
+.btn-large:hover {
+    box-shadow: none;
+    border: 0px none transparent;
+}
+
+.textbox {
+    width:1040px;
+    height:510px;
+    background: url(../images/txt.png);
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.inner {
+    text-align:center;
+    width:850px;
+    height:300px;
+    word-wrap: break-word;
+    overflow-y:scroll;
+    margin-top:90px;
+    right:250px;
+    position:absolute;
+
+}
