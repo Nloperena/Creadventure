@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Material Icons CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- fontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <!-- google fonts cdn -->
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!--Styling -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- ------------------------------------------JAVASCRIPT-------------------------------- -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-wrapper red">
+            <div class="nav-wrapper ">
+                <a href="#!" class="brand-logo black-text center"><img src="assets\images\beast-ball.png">Logo</a>
+                <!-- Modal Trigger -->
+                <a class="btn-large red btn modal-trigger" href="#modal1"><i class="medium material-icons">build</i></a>
+                <!-- Modal Structure -->
+                <div id="modal1" class="modal modal-fixed-footer">
+                    <div class="center modal-content black-text">
+                        <h4>Modal Header</h4>
+                        <p>A bunch of text</p>
+                    </div>
+                    <div class="modal-footer black-text">
+                        <p>sample text</p>
+                    </div>
+                </div>
+            </div>
+    </nav>
+
+    <div class="textbox">
+        <div class="inner">
+                <p><h1>Testing!!!!</h1></p>
+            <p>Enslave the hooman sleep on my human's head lick yarn hanging out of own butt for leave fur on owners
+                clothes pretend not to be evil cat not kitten around but is good you understand your place in my world.
+            </p>
+            <p>Have my breakfast spaghetti yarn really likes hummus meow all night, bleghbleghvomit my furball really
+                tie the room together. Stuff and things i see a bird i stare at it i meow at it i do a wiggle come here
+                birdy eat plants, meow, and throw up because i ate plants so try to jump onto window and fall while
+                scratching at wall, for 𝕄𝔼𝕆𝕎.</p>
+            <p>Instead of drinking water from the cat bowl, make sure to steal water from the toilet eat a rug and furry
+                furry hairs everywhere.</p>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems, options);
+        });
+        // Or with jQuery
+        $(document).ready(function () {
+            $('.modal').modal();
+        });
+    </script>
+</body>
+
+</html>
