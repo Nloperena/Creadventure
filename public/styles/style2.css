@@ -43,7 +43,7 @@ h1 {
 
 .inner {
     text-align:center;
-    width:850px;
+    width:966px;
     height:300px;
     word-wrap: break-word;
     overflow-y:scroll;
@@ -52,3 +52,19 @@ h1 {
     position:absolute;
 
 }
+
+footer {
+    margin: 110px 0px 0px 15px;
+  }
+
+.mainbox {
+    width:1040px;
+    height:510px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.middle {
+    text-align: center;
+}
+      
