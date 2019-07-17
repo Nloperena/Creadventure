@@ -4,7 +4,8 @@
     "password": null,
     "database": "exampledb",
     "host": "localhost",
-    "dialect": "mysql"
+    "dialect": "mysql2",
+    "PORT": 3307
   },
   "test": {
     "username": "root",
