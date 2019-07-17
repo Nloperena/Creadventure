@@ -32,46 +32,41 @@
                 <a href="#!" class="brand-logo black-text center "><img id="logoSprite"
                         src="../public/images/a672c7ce2caaf4f.png">Creadventure</a>
                 <!-- Modal Trigger -->
-                <a class="btn-large grey btn modal-trigger " id="loginButton" href="#modal1">Login</a>
+                <a class="btn-large grey btn modal-trigger " id="Sign-Up-Button" href="#modal1">Sign-Up</a>
                 <!-- Modal Structure -->
                 <div id="modal1" class="modal modal-fixed-footer">
                     <div class="center modal-content black-text">
                         <h4>Enter Account Information</h4>
                         <div class="container">
                             <div class="row">
-                                <form class="col s12">
-                                    <div class="row">
-        
-                                        <div class="input-field col s6">
-                                            <input id="username" type="text" class="validate" id="username-input">
-                                            <label for="username">Username</label>
-                                        </div>
-                                    </div>
+                                <form action="submit" method="post" id="signup">
+                                    <h1>SIGN UP!</h1><br>
+                                    Username:
+                                    <input type="text" id="username-input"><br>
+                                    Password:
+                                    <input type="text" id="password-input">
+                                    <button type="button" value="Submit" id="submit-signup">Submit!</button>    
+                                </form>
+                    </div>
 
-                                    <div class="row">
-                                        <div class="input-field col s12">
-                                            <input id="password" type="password" class="validate" id="password-input">
-                                            <label for="password">Password</label>
-                                        </div>
-                                    </div>
-                                    <br>
-                                    <div class="row">
-                                        <div class="col-m6"> <a class="waves-effect waves-light btn-large"><i
-                                                    class="material-icons right">account_circle</i>Login</a>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-<<<<<<< HEAD
-                                        <a class="waves-effect waves-light btn-large" id="submit-signup"><i
-                                                class="material-icons right">create</i>Sign up</a>   
-=======
-                                        <a class="waves-effect waves-light btn-large"><i
-                                                class="material-icons right">create</i>Sign up</a>
->>>>>>> 9faa91ec853c0d167a14cafa0ea8d899b1f9da23
-                                    </div>
-                            </div>
-                        </div>
-                        </form>
+
+                </div>
+                <!-- Modal Trigger -->
+                <a class="btn-large grey btn modal-trigger " id="Login-Button" href="#modal2">Login</a>
+                <!-- Modal Structure -->
+                <div id="modal2" class="modal modal-fixed-footer">
+                    <div class="center modal-content black-text">
+                        <h4>Enter Account Information</h4>
+                        <div class="container">
+                            <div class="row">
+                                <form action="submit" method="post" id="signup">
+                                    <h1>SIGN IN!</h1><br>
+                                    Username:
+                                    <input type="text" id="username-login"><br>
+                                    Password:
+                                    <input type="text" id="password-login">
+                                    <button type="button" value="Submit" id="submit-login">Submit!</button>    
+                                </form>
                     </div>
 
 
@@ -230,7 +225,6 @@
 
 
 
-<<<<<<< HEAD
     <!-- modal js -->
     <script>
     
@@ -245,6 +239,7 @@
         });
 
         //signup with jquery
+        
         $("#submit-signup").on("click", function(){
             let username = $("#username-input").val()
             let password = $("#password-input").val()
@@ -266,26 +261,8 @@
             }
         );
         })
+    
     </script>
-=======
-                <!-- modal js -->
-                <script>
-                    document.addEventListener('DOMContentLoaded', function () {
-                        var elems = document.querySelectorAll('.modal');
-                        var instances = M.Modal.init(elems, options);
-                    });
-                    // Or with jQuery
-                    $(document).ready(function () {
-                        $('.modal').modal();
-                    });
-                    $(document).ready(function () {
-                        $('.parallax').parallax();
-                    });
-                    $(document).ready(function () {
-                        $('.collapsible').collapsible();
-                    });
-                </script>
->>>>>>> 9faa91ec853c0d167a14cafa0ea8d899b1f9da23
 
 </body>
 
