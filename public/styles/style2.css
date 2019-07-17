@@ -89,7 +89,7 @@ footer {
 
 #aboutUsContainer{
     background-image: url(../images/8-bit-wallpaper-3.jpg);
-    height: auto;
+    height: 150rem;
     padding-top: 5rem;
     line-height: 5rem;  
 }
@@ -97,4 +97,20 @@ footer {
         margin-top: .25rem;
         margin-right:1rem;
     }
-  
+#modal1{
+    background-image:url(../images/8-bit-wallpaper-3.jpg);
+    width:50rem;
+    height:300rem;
+    border-radius: 3rem;
+    overflow: none;
+    top:15%;
+}
+
+#modal2{
+    background-image:url(../images/8-bit-wallpaper-3.jpg);
+    width:50rem;
+    height:300rem;
+    border-radius: 3rem;
+    overflow: none;
+    top:15%;
+}
