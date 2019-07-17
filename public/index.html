@@ -41,26 +41,17 @@
                             <div class="row">
                                 <form class="col s12">
                                     <div class="row">
+        
                                         <div class="input-field col s6">
-                                            <input " id=" first_name" type="text" class="validate">
-                                            <label for="first_name">First Name</label>
-                                        </div>
-                                        <div class="input-field col s6">
-                                            <input id="last_name" type="text" class="validate">
-                                            <label for="last_name">Last Name</label>
+                                            <input id="username" type="text" class="validate" id="username-input">
+                                            <label for="username">Username</label>
                                         </div>
                                     </div>
 
                                     <div class="row">
                                         <div class="input-field col s12">
-                                            <input id="password" type="password" class="validate">
+                                            <input id="password" type="password" class="validate" id="password-input">
                                             <label for="password">Password</label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="input-field col s12">
-                                            <input id="email" type="email" class="validate">
-                                            <label for="email">Email</label>
                                         </div>
                                     </div>
                                     <br>
@@ -70,7 +61,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <a class="waves-effect waves-light btn-large"><i
+                                        <a class="waves-effect waves-light btn-large" id="submit-signup"><i
                                                 class="material-icons right">create</i>Sign up</a>   
                                     </div>
                             </div>
@@ -268,11 +259,7 @@
 
     <!-- modal js -->
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var elems = document.querySelectorAll('.modal');
-            var instances = M.Modal.init(elems, options);
-        });
-        // Or with jQuery
+    
         $(document).ready(function () {
             $('.modal').modal();
         });
@@ -282,6 +269,29 @@
         $(document).ready(function () {
             $('.collapsible').collapsible();
         });
+
+        //signup with jquery
+        $("#submit-signup").on("click", function(){
+            let username = $("#username-input").val()
+            let password = $("#password-input").val()
+            console.log(username +" " + password)
+        
+        var newUser = {
+            username: username,
+            password: password
+        }
+
+        $.ajax("/api/newUser", {
+            type: "POST",
+            data: newUser
+        }).then(
+            function(data) {
+                console.log(data)
+                // Reload the page to get the updated list
+                location.reload();
+            }
+        );
+        })
     </script>
 
 </body>
