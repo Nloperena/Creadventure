@@ -1,100 +1,133 @@
 ::-webkit-scrollbar {
-        width: 8px;
+    width: 8px;
 }
-  
+
 ::-webkit-scrollbar-track {
-    background: transparent; 
+background: transparent; 
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #000; 
+background: #000; 
 }
 
 body {
-    font-family: 'Press Start 2P', cursive;
-    background-image:url(../images/eOy5JWI.jpg);
+font-family: 'Press Start 2P', cursive;
+background-image:url(../images/eOy5JWI.jpg);
 }
 
 h1 {
-    font-size:30px;
+font-size:30px;
 }
 
 .btn, .btn-large {
-    box-shadow: none;
-    border: 0px none transparent;
-    float: right;
+box-shadow: none;
+border: 0px none transparent;
+float: right;
 }
 
 .btn:hover {
-    box-shadow: none;
-    border: 0px none transparent;
+box-shadow: none;
+border: 0px none transparent;
 }
 
 .btn-large:hover {
-    box-shadow: none;
-    border: 0px none transparent;
+box-shadow: none;
+border: 0px none transparent;
 }
 
 .textbox {
-    width:1040px;
-    height:510px;
-    background: url(../images/txt.png);
-    margin-right:auto;
-    margin-left:auto;
-    z-index:1;
+width:1040px;
+height:510px;
+background: url(../images/txt.png);
+margin-right:auto;
+margin-left:auto;
+z-index:1;
 }
 
 .inner {
-    background-color: white;
-    text-align: center;
-    width: 912px;
-    height: 360px;
-    word-wrap: break-word;
-    overflow-y: scroll;
-    margin-top: 80px;
-    right: 427px;
-    position: absolute;
+background-color: white;
+text-align: center;
+width: 912px;
+height: 360px;
+word-wrap: break-word;
+overflow-y: scroll;
+margin-top: 80px;
+right: 500px;
+position: absolute;
 
 }
 
 footer {
-    margin: 110px 0px 0px 15px;
-  }
+margin: 110px 0px 0px 15px;
+}
 
 .mainbox {
-    width:1040px;
-    height:510px;
-    margin-right:auto;
-    margin-left:auto;
+width:1040px;
+height:510px;
+margin-right:auto;
+margin-left:auto;
 }
 
 .middle {
-    text-align: center;
+text-align: center;
 }
-    
+
 .aboutUsDivs{
-    background-color:grey;
-    z-index:3;
+background-color:grey;
+z-index:3;
 }
 
 #logoSprite{
-    width:10%;
-    height:10%;
+width:10%;
+height:10%;
 }
 #textboxlocation{
-    margin-bottom: 0rem;
-    padding: 2rem;
-    margin-top: -20rem;
+margin-bottom: 0rem;
+padding: 2rem;
+margin-top: -20rem;
 }
 
 #aboutUsContainer{
-    background-image: url(../images/8-bit-wallpaper-3.jpg);
-    height: auto;
-    padding-top: 5rem;
-    line-height: 5rem;  
+background-image: url(../images/8-bit-wallpaper-3.jpg);
+height: 150rem;
+padding-top: 5rem;
+line-height: 5rem;  
 }
-    #loginButton {
-        margin-top: .25rem;
-        margin-right:1rem;
-    }
-  
+#loginButton {
+    margin-top: .25rem;
+    margin-right:1rem;
+}
+#modal1{
+background-image:url(../images/8-bit-wallpaper-3.jpg);
+width:50rem;
+height:300rem;
+border-radius: 3rem;
+overflow: none;
+top:15%;
+}
+
+#modal2{
+background-image:url(../images/8-bit-wallpaper-3.jpg);
+width:50rem;
+height:300rem;
+border-radius: 3rem;
+overflow: none;
+top:15%;
+}
+
+footer.foot {
+height: 50px;
+position: absolute;
+bottom: 0;
+width: 100%;
+margin: 0px 5px 0px 15px;
+
+}
+
+
+.start {
+    height: 250px;
+    width: 100%;
+    margin: 100px 0px 0px 0px;
+    
+}
