@@ -21,4 +21,17 @@ module.exports = function(app) {
       res.json(dbExample);
     });
   });
+
+  app.post("/api/newUser", function(req, res){
+    db.userbase.create({
+      username:req.body.username,
+      password: req.body.password
+    }).then(function(data){res.json(data)})
+  })
+
+  app.get("/api/allUser", function(req, res) {
+    db.userbase.findAll({}).then(function(data) {
+      res.json(data);
+    });
+  })
 };
