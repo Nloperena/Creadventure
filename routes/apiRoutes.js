@@ -29,9 +29,4 @@ module.exports = function(app) {
     }).then(function(data){res.json(data)})
   })
 
-  app.get("/api/allUser", function(req, res) {
-    db.userbase.findAll({}).then(function(data) {
-      res.json(data);
-    });
-  })
 };

@@ -24,10 +24,20 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/signupTest.html"));
   })
 
+  app.get("/login/:user", function(req, res) {
+    db.userbase.findOne({ where: { username: req.params.user } }).then(function(data) {
+      res.render("example", {
+        example: data
+      });
+    });
+  });
+
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
     res.render("404");
   });
+
+  
 
   
 };

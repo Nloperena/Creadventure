@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- Material Icons CDN -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- fontAwesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
-    <!-- google fonts cdn -->
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <!--Styling -->
-    <link rel="stylesheet" href="../public/styles/style2.css">
-    <!-- ------------------------------------------JAVASCRIPT-------------------------------- -->
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <title>Home</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!-- Material Icons CDN -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- fontAwesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+        <!-- google fonts cdn -->
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <!--Styling -->
+        <link rel="stylesheet" href="../public/styles/style2.css">
+        <!-- ------------------------------------------JAVASCRIPT-------------------------------- -->
+        <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <title>Home</title>
+     </head>
 
 <body>
 
@@ -32,9 +32,9 @@
                 <a href="#!" class="brand-logo black-text center "><img id="logoSprite"
                         src="../public/images/a672c7ce2caaf4f.png">Creadventure</a>
                 <!-- Modal Trigger -->
-                <a class="btn-large grey btn modal-trigger " id="loginButton" href="#modal1">Login</a>
+                <!-- <a class="btn-large grey btn modal-trigger " id="loginButton" href="#modal1">Login</a> -->
                 <!-- ---------------------------------------------MODAL LOGIN------------------------------------------------------>
-                <div id="modal1" class="modal modal-fixed-footer">
+                <!-- <div id="modal1" class="modal modal-fixed-footer">
                     <div class="center modal-content black-text">
                         <h4>Enter Account Information</h4>
                         <div class="container">
@@ -43,14 +43,14 @@
                                     <div class="row">
 
                                         <div class="input-field col s6">
-                                            <input id="Username" type="text" class="validate">
+                                            <input id="login-username" type="text" class="validate">
                                             <label class="black-text" for="Username">Username</label>
                                         </div>
                                     </div>
 
                                     <div class="row">
                                         <div class="input-field col s12">
-                                            <input id="password" type="password" class="validate">
+                                            <input id="login-password" type="password" class="validate">
                                             <label class="black-text" for="password">Password</label>
                                         </div>
                                     </div>
@@ -61,61 +61,31 @@
                                                     class="material-icons right">account_circle</i>Login</a>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <a class="waves-effect waves-light btn-large grey"><i
-                                                class="material-icons right">create</i>Sign up</a>
-                                    </div>
                             </div>
                         </div>
                         </form>
                     </div>
 
 
-                </div>
+                </div> -->
                 <!-- ---------------------------------SIGN UP--------------------------- -->
                 <!-- Modal Trigger -->
-                <a class="btn-large grey btn modal-trigger " id="loginButton" href="#modal2">Sign Up</a>
-                <!-- ---------------------------------------------MODAL LOGIN------------------------------------------------------>
+                <a class="btn-large grey btn modal-trigger " id="loginButton" href="#modal2">Sign Up/Log In</a>
+                <!-- ---------------------------------------------MODAL Sign UP------------------------------------------------------>
                 <div id="modal2" class="modal modal-fixed-footer">
                     <div class="center modal-content black-text">
                         <h4>Create Account Information</h4>
                         <div class="container">
                             <div class="row">
-                                <form class="col s12">
-                                    <div class="row">
-
-                                        <div class="input-field col s6">
-                                            <input id="Username" type="text" class="validate">
-                                            <label class="black-text" for="Username">Username</label>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="input-field col s12">
-                                            <input id="password" type="password" class="validate">
-                                            <label class="black-text" for="password">Password</label>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="input-field col s12">
-                                            <input id="password" type="password" class="validate">
-                                            <label class="black-text" for="password">Confirm Password</label>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-m6"> <a class="waves-effect waves-light btn-large grey"><i
-                                                    class="material-icons right">account_circle</i>Login</a>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <a class="waves-effect waves-light btn-large grey"><i
-                                                class="material-icons right">create</i>Sign up</a>
-                                    </div>
-                            </div>
-                        </div>
-                        </form>
+                                <form action="submit" method="post" id="signup">
+                                    <h1>SIGN UP!</h1><br>
+                                    Username:
+                                    <input type="text" id="signup-username"><br>
+                                    Password:
+                                    <input type="text" id="signup-password">
+                                    <button type="button" value="Submit" id="submit-signup">Sign UP!</button>
+                                    <button type="button" value="Submit" id="submit-login">Log In!</button>    
+                                </form>
                     </div>
                 </div>
             </div>
@@ -286,6 +256,48 @@
                     $(document).ready(function () {
                         $('input#input_text, textarea#textarea2').characterCounter();
                     });
+
+
+                    //sign up script
+                    $("#submit-login").on("click",function(){
+                        let username = $("#signup-username").val()
+                        let password = $("#signup-password").val()
+                        console.log(username +" " + password)
+
+                        var newUser = {
+                            username: username,
+                            password: password
+                        }
+
+                        $.ajax("/login/"+username, {
+                            type: "GET",
+                            data: newUser
+                        }).then(function(data){
+                            console.log(data)
+                        })
+                    })
+
+                    $("#submit-signup").on("click", function(){
+                        let username = $("#signup-username").val()
+                        let password = $("#signup-password").val()
+                        console.log(username +" " + password)
+
+                        var newUser = {
+                            username: username,
+                            password: password
+                        }
+
+                        $.ajax("/api/newUser", {
+                            type: "POST",
+                            data: newUser
+                        }).then(
+                            function(data) {
+                                console.log(data)
+                                // Reload the page to get the updated list
+                                location.reload();
+                            }
+                        );
+                    })
                 </script>
 
 </body>
