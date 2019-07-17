@@ -22,6 +22,7 @@ h1 {
 .btn, .btn-large {
     box-shadow: none;
     border: 0px none transparent;
+    float: right;
 }
 
 .btn:hover {
