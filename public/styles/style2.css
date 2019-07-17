@@ -74,7 +74,6 @@ footer {
     
 .aboutUsDivs{
     background-color:grey;
-    
     z-index:3;
 }
 
@@ -90,9 +89,9 @@ footer {
 
 #aboutUsContainer{
     background-image: url(../images/8-bit-wallpaper-3.jpg);
-    height: 90rem;
+    height: auto;
     padding-top: 5rem;
-    line-height: 5rem;
+    line-height: 5rem;  
 }
     #loginButton {
         margin-top: .25rem;
