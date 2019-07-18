@@ -36,4 +36,10 @@ module.exports = function(app) {
       res.json(data)
     })
   })
+
+  app.get("/api/natures", function(req,res){
+    db.nature.findAll({}).then(function(data){
+      res.json(data)
+    })
+  })
 };
