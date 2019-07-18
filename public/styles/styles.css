@@ -32,4 +32,6 @@ body {
     }
     
     
-    
+    .card-horizontal {
+        background: rgb(235, 23, 23);
+    }
