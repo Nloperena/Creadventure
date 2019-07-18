@@ -20,15 +20,19 @@ module.exports = function(app) {
     });
   });
 
-  app.get("/test",function(req,res){
-    res.sendFile(path.join(__dirname, "../public/signupTest.html"));
+  app.get("/account",function(req,res){
+    res.render("account")
   })
 
   app.get("/login/:user", function(req, res) {
     db.userbase.findOne({ where: { username: req.params.user } }).then(function(data) {
-      res.render("example", {
-        example: data
-      });
+      console.log("User in route ", data)
+
+      var obj = {
+        userUser: data
+      }
+      res.render("account", obj);
+      
     });
   });
 
