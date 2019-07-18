@@ -1,0 +1,19 @@
+<h1>pokeman</h1>
+<div id="appendHere">
+
+</div>
+
+<script>
+    wildPokemon()
+    
+    function wildPokemon(){
+        $.ajax({
+            url:"/api/wildPokemon", 
+            type: "GET",
+        }).then(function(data){
+            console.log(data)
+            
+        })
+    }           
+
+</script>

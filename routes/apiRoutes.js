@@ -29,4 +29,11 @@ module.exports = function(app) {
     }).then(function(data){res.json(data)})
   })
 
+
+  app.get("/api/wildPokemon", function(req, res){
+    let randomNum = Math.floor(Math.random()*493 +1)
+    db.pokedex.findAll({where:{pokedex_number:randomNum}}).then(function(data){
+      res.json(data)
+    })
+  })
 };
