@@ -1,128 +1,135 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-image: url(../images/eOy5JWI.jpg);
+    position: relative;
+    padding-left: 0rem;
+}
+
+h1 {
+    font-size: 30px;
+}
+
 ::-webkit-scrollbar {
     width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-background: transparent; 
+    background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-background: #000; 
+    background: grey;
 }
 
-body {
-font-family: 'Press Start 2P', cursive;
-background-image:url(../images/eOy5JWI.jpg);
-}
-
-h1 {
-font-size:30px;
-}
-
-.btn, .btn-large {
-box-shadow: none;
-border: 0px none transparent;
-float: right;
+.btn,
+.btn-large {
+    box-shadow: none;
+    border: 0px none transparent;
+    float: right;
 }
 
 .btn:hover {
-box-shadow: none;
-border: 0px none transparent;
+    box-shadow: none;
+    border: 0px none transparent;
 }
 
 .btn-large:hover {
-box-shadow: none;
-border: 0px none transparent;
+    box-shadow: none;
+    border: 0px none transparent;
 }
 
 .textbox {
-width:1040px;
-height:510px;
-background: url(../images/txt.png);
-margin-right:auto;
-margin-left:auto;
-z-index:1;
+    width: 69rem;
+    height: 510px;
+    background: url(../images/txt.png);
+    z-index: 1;
+    margin-left: 6.35rem;
 }
 
 .inner {
-background-color: white;
-text-align: center;
-width: 912px;
-height: 360px;
-word-wrap: break-word;
-overflow-y: scroll;
-margin-top: 80px;
-right: 500px;
-position: absolute;
-
+    background-color: whitesmoke;
+    text-align: center;
+    width: 61.5rem;
+    height: 24rem;
+    word-wrap: break-word;
+    overflow-y: scroll;
+    margin-top: 5.35rem;
+    right: 34.6rem;
+    position: absolute;
+    border-radius: 2rem;
 }
 
 footer {
-margin: 110px 0px 0px 15px;
+    margin: 110px 0px 0px 15px;
 }
 
 .mainbox {
-width:1040px;
-height:510px;
-margin-right:auto;
-margin-left:auto;
+    width: 1040px;
+    height: 510px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .middle {
-text-align: center;
+    text-align: center;
 }
 
-.aboutUsDivs{
-background-color:grey;
-z-index:3;
+.aboutUsDivs {
+    background-color: grey;
+    z-index: 3;
 }
 
-#logoSprite{
-width:10%;
-height:10%;
-}
-#textboxlocation{
-margin-bottom: 0rem;
-padding: 2rem;
-margin-top: -20rem;
+#logoSprite {
+    width: 12%;
+    height: 12%;
 }
 
-#aboutUsContainer{
-background-image: url(../images/8-bit-wallpaper-3.jpg);
-height: 150rem;
-padding-top: 5rem;
-line-height: 5rem;  
+#textboxlocation {
+    margin-bottom: 0rem;
+    padding: 2rem;
+    margin-top: -23rem;
+    z-index: 2;
+    width:100%
 }
+
+#aboutUsContainer {
+    background-image: url(../images/8-bit-wallpaper-3.jpg);
+    height: 150rem;
+    padding-top: 5rem;
+    line-height: 5rem;
+}
+
 #loginButton {
     margin-top: .25rem;
-    margin-right:1rem;
-}
-#modal1{
-background-image:url(../images/8-bit-wallpaper-3.jpg);
-width:50rem;
-height:300rem;
-border-radius: 3rem;
-overflow: none;
-top:15%;
-height: 41rem;
+    margin-right: 1rem;
 }
 
-#modal2{
-background-image:url(../images/8-bit-wallpaper-3.jpg);
-width:50rem;
-height:300rem;
-border-radius: 3rem;
-overflow: none;
-top:15%;
-height: 31rem;
+#modal1 {
+    background-image: url(../images/8-bit-wallpaper-3.jpg);
+    width: 50rem;
+    height: 300rem;
+    border-radius: 3rem;
+    overflow: none;
+    top: 15%;
+    height: 41rem;
+}
+
+#modal2 {
+    background-image: url(../images/8-bit-wallpaper-3.jpg);
+    width: 50rem;
+    height: 300rem;
+    border-radius: 3rem;
+    overflow: none;
+    top: 15%;
+    height: 31rem;
 }
 
 footer.foot {
-height: 50px;
-position: absolute;
-bottom: 0;
-width: 100%;
-margin: 0px 5px 0px 15px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0px 5px 0px 15px;
 
 }
 
@@ -131,5 +138,213 @@ margin: 0px 5px 0px 15px;
     height: 250px;
     width: 100%;
     margin: 100px 0px 0px 0px;
-    
+
+}
+
+
+
+@media only screen and (max-width: 1440px) {
+    body {
+        background-image: url(../images/8-bit-wallpaper-3.jpg);
+        font-size: 20px;
+        position: absolute;
+        background-size: 15rem;
+    }
+
+    .container {
+        width:100%
+    }
+
+    .textbox {
+        width: 85rem;
+        height: 510px;
+        background: url(../images/txt.png);
+        z-index: 2;
+        position: relative;
+        margin-left: 0;
+    }
+
+    .inner {
+        background-color: white;
+        text-align: center;
+        width: 65.3rem;
+        height: 26.6rem;
+        word-wrap: break-word;
+        overflow-y: scroll;
+        margin-top: -31.5rem;
+        right: 6.1rem;
+        position: absolute;
+        border-radius: 2rem;
+        /* margin-bottom: 31.8rem; */
+        z-index: 0;
+    }
+
+    #aboutUsContainer {
+        background-image: url(../images/8-bit-wallpaper-3.jpg);
+        height: 150rem;
+        padding-top: 5rem;
+        line-height: 5rem;
+    }
+
+    #stickynav {
+        margin: auto;
+        font-size: 18px;
+
+    }
+
+    #loginButton {
+        margin: auto;
+        font-size: 15px;
+
+    }
+
+
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a.icon {
+        /* position: absolute; */
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 1105px) {
+    body {
+        background-image: url(../images/8-bit-wallpaper-3.jpg);
+        font-size: 20px;
+        position: absolute;
+        background-size: 15rem;
+    }
+
+    .container {
+        width:100%
+    }
+
+    .textbox {
+        width: 85rem;
+        height: 510px;
+        background: url(../images/txt.png);
+        z-index: 2;
+        margin-left: 0;
+    }
+
+    .inner {
+        background-color: white;
+        text-align: center;
+        width: 65.3rem;
+        height: 26.6rem;
+        word-wrap: break-word;
+        overflow-y: scroll;
+        margin-top: -31.5rem;
+        right: 6.1rem;
+        position: absolute;
+        border-radius: 2rem;
+        /* margin-bottom: 31.8rem; */
+        z-index: 0;
+    }
+
+    #aboutUsContainer {
+        background-image: url(../images/8-bit-wallpaper-3.jpg);
+        height: 150rem;
+        padding-top: 5rem;
+        line-height: 5rem;
+    }
+
+    #stickynav {
+        margin: auto;
+        font-size: 18px;
+
+    }
+
+    #loginButton {
+        margin: auto;
+        font-size: 15px;
+
+    }
+
+    #textboxlocation {
+        margin-bottom: 0rem;
+        padding: 2rem;
+        margin-top: -23rem;
+        z-index: 2;
+        width:100%
+    }
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a.icon {
+        /* position: absolute; */
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 991px) {
+    body {
+        background-image: url(../images/8-bit-wallpaper-3.jpg);
+        font-size: 20px;
+        
+        background-size: 300rem;
+    }
+
+    .container {
+        width:
+    }
+
+    .textbox {
+        width: 85rem;
+        height: 510px;
+        background: url(../images/txt.png);
+        z-index: 2;
+        margin-left: 0;
+    }
+
+    .inner {
+        background-color: white;
+        text-align: center;
+        width: 63.4rem;
+        height: 25.2rem;
+        word-wrap: break-word;
+        overflow-y: scroll;
+        margin-top: -30.15rem;
+        right: 5.85rem;
+        position: absolute;
+        border-radius: 2rem;
+        /* margin-bottom: 31.8rem; */
+        z-index: 0;
+    }
+}
+
+#aboutUsContainer {
+    background-image: url(../images/8-bit-wallpaper-3.jpg);
+    height: 150rem;
+    padding-top: 5rem;
+    line-height: 5rem;
+}
+
+#stickynav {
+    margin: auto;
+    font-size: 18px;
+
+}
+
+#loginButton {
+    margin: auto;
+    font-size: 15px;
+
 }
