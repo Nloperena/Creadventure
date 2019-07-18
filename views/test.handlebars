@@ -40,8 +40,10 @@
 
 
     function renderMonster(obj){
-        var image = $("<img>").attr("src", "/../../public/images/platinum/1.png")
-        $("#appendHere").append(image)
+        var $image = $("img").first();
+        var image = $("<img>").attr("src", "/../public/images/platinum/"+obj.pokedex_number+".png")
+        
+        $("#appendHere").append($image)
     }
 
 
