@@ -25,9 +25,10 @@ module.exports = function(app) {
   })
 
   app.get("/login/:user", function(req, res) {
-    db.userbase.findOne({ where: { username: req.params.user } }).then(function(data) {
-      res.render("example", {
-        example: data
+    db.userbase.findOne({ where: { username: req.params.user } }).then(function(user) {
+      //console.log(user)
+      res.render("account", {
+        user: user
       });
     });
   });
