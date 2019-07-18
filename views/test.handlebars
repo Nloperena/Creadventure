@@ -1,0 +1,65 @@
+<h1>pokeman</h1>
+<div id="appendHere">
+
+</div>
+
+<script>
+    var oppJSON 
+    var opp
+    var natures = []
+    var genNature
+    $.ajax({
+        url:"/api/natures",
+        type:"GET"
+    }).then(function(data){
+        for(i=0;i<data.length;i++){
+            natures.push(data[i])
+        }
+        console.log(natures)
+    })
+
+
+    wildPokemon()
+    function wildPokemon(){
+        genNature = Math.floor(Math.random()*25 + 1)
+        $.ajax({
+            url:"/api/wildPokemon", 
+            type: "GET",
+        }).then(function(data){
+            oppJSON = data
+            console.log(oppJSON)   
+
+            opp = new monster(oppJSON[0])
+            console.log(opp)
+
+            renderMonster(opp)
+
+        })
+        
+    }
+
+
+    function renderMonster(obj){
+        var $image = $("img").first();
+        var image = $("<img>").attr("src", "/../public/images/platinum/"+obj.pokedex_number+".png")
+        
+        $("#appendHere").append($image)
+    }
+
+
+    class monster{
+        constructor(obj){
+            this.pokedex_number = obj.pokedex_number;
+            this.name = obj.name;
+            this.isShiny = (Math.floor(Math.random()*100 + 1)> 90);
+            this.nature = natures[genNature];
+            this.hp = obj.hp;
+            this.attack = obj.attack;
+            this.defense = obj.defense;
+            this.sp_attack = obj.sp_attack;
+            this.sp_defense = obj.sp_defense;
+            this.speed = obj.speed;
+        }
+
+    }
+</script>
