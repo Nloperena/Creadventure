@@ -1,3 +1,66 @@
-.list-group-item {
+/* .list-group-item {
   line-height: 2.5;
+} */
+
+
+body {
+font-family: 'Press Start 2P', cursive;
 }
+
+h1 {
+font-size:30px;
+}
+
+.btn, .btn-large {
+box-shadow: none;
+border: 0px none transparent;
+float: right;
+}
+
+.btn:hover {
+box-shadow: none;
+border: 0px none transparent;
+}
+
+.btn-large:hover {
+box-shadow: none;
+border: 0px none transparent;
+}
+
+
+footer.foot {
+height: 50px;
+position: absolute;
+bottom: 0;
+width: 100%;
+margin: 0px 5px 0px 15px;
+
+}
+
+/* .start {
+    height: 250px;
+    width: 100%;
+    margin: 100px 0px 0px 0px;
+    
+} */
+
+.background {
+    background: gray;
+    width: auto;
+    height: 576px;
+}
+
+.text {
+    color:white;
+    margin-top: 150px;
+}
+
+.menu {
+    margin: 0px 5px 0px 15px;
+}
+
+.power {
+    margin-top: 200px;
+}
+
+
