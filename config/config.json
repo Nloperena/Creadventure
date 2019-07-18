@@ -4,8 +4,7 @@
     "password": "root",
     "database": "creadventure",
     "host": "localhost",
-    "dialect": "mysql2",
-    "PORT": 3307
+    "dialect": "mysql"
   },
   "test": {
     "username": "root",
