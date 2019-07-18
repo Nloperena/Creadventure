@@ -50,8 +50,9 @@ h1 {
 }
 
 
-.inner {
+/* .inner {
     background-color: whitesmoke;
+    background-image: url(../images/txt.png);
     text-align: center;
     width: 61.7rem;
     height: 24.2rem;
@@ -61,6 +62,12 @@ h1 {
     right: 94.2rem;
     position: absolute;
     border-radius: 2rem;
+    z-index: 0;
+} */
+
+.inner {
+    
+    border-radius: 3rem;
 }
 
 footer {
@@ -93,7 +100,8 @@ footer {
     padding: 2rem;
     margin-top: -23rem;
     z-index: 2;
-    width: 100%
+    width: 100%;
+   
 }
 
 #aboutUsContainer {
@@ -153,12 +161,38 @@ footer.foot {
         width: 288%;
         height:100%;
     }
+    /* .inner {
+        background-color: whitesmoke;
+        text-align: center;
+        width: 61.7rem;
+        height: 24.2rem;
+        word-wrap: break-word;
+        overflow-y: scroll;
+        margin-top: 5.2rem;
+        right: 94.2rem;
+        position: absolute;
+        border-radius: 2rem;
+    } */
+    
 
 @media screen and (min-width:711px){
     html {
         width: 193%;
         height:100%;
     }
+    /* .inner {
+        background-color: whitesmoke;
+        text-align: center;
+        width: 61.7rem;
+        height: 24.2rem;
+        word-wrap: break-word;
+        overflow-y: scroll;
+        margin-top: 5.2rem;
+        right: 94.2rem;
+        position: absolute;
+        border-radius: 2rem;
+    } */
+    
 }
 /* @media only screen and (max-width: 1104px) {
     body {
@@ -171,6 +205,19 @@ footer.foot {
 @media only screen and (min-width: 1440px) {
     html {
         width:100%;
+        /* .inner {
+            background-color: whitesmoke;
+            text-align: center;
+            width: 61.7rem;
+            height: 24.2rem;
+            word-wrap: break-word;
+            overflow-y: scroll;
+            margin-top: 5.2rem;
+            right: 94.2rem;
+            position: absolute;
+            border-radius: 2rem;
+        }
+         */
     }
 
    
