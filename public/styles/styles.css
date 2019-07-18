@@ -1,34 +1,35 @@
 
 body {
-font-family: 'Press Start 2P', cursive;
-background: gray;
-}
-
-h1 {
-font-size:30px;
-}
-
-
-footer.foot {
-    height: 50px;
-    position: absolute;
-    /* bottom: 0; */
-    width: 100%;
-    margin-right: 10px;
-    
+    font-family: 'Press Start 2P', cursive;
+    background: url(../images/town.jpg);
     }
-
-.text {
-    color:white;
-    margin-top: 150px;
-}
-
-.menu {
-    margin: 0px 5px 0px 15px;
-}
-
-.power {
-    margin-top: 200px;
-}
-
-
+    
+    h1 {
+    font-size:30px;
+    }
+    
+    
+    footer.foot {
+        height: 2rem;
+        position: absolute;
+        /* bottom: 0; */
+        width: 100%;
+        margin-right: 10rem;
+        
+        }
+    
+    .text {
+        color:white;
+        margin-top: 10rem;
+    }
+    
+    .menu {
+        margin: 0rem 5rem 0rem 15rem;
+    }
+    
+    .power {
+        margin-top: 10rem;
+    }
+    
+    
+    
