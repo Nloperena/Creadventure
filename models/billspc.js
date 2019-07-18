@@ -2,6 +2,8 @@ module.exports = function(sequelize, DataTypes) {
   var pc = sequelize.define("pc", {
     pokedex_number: DataTypes.INTEGER,
     name: DataTypes.STRING,
+    owner: DataTypes.INTEGER,
+    isShiny: DataTypes.BOOLEAN,
     type1: DataTypes.STRING,
     type2: DataTypes.STRING,
     natureType: DataTypes.STRING,
