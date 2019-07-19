@@ -1,4 +1,3 @@
-
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -31,46 +30,51 @@
 body {
     font-family: 'Press Start 2P', cursive;
     background: url(../images/pokemon-red-version-wallpaper-13.jpg);
-    }
-    
-    h1 {
-    font-size:30px;
-    }
-    
-    
-    footer.foot {
-        height: 2rem;
-        position: absolute;
-        /* bottom: 0; */
-        width: 100%;
-        margin-right: 10rem;
-        
-        }
-    
-    .partybox{
-        background-color: white;
-    }    
+}
+
+h1 {
+    font-size: 30px;
+}
 
 
-    .text {
-        color:white;
-        margin-top: 10rem;
-    }
-    
-    .menu {
-        margin: 0rem 5rem 0rem 15rem;
-    }
-    
-    .power {
-        margin-top: 10rem;
-    }
-    
-    
-    .card-horizontal {
-        background: rgb(235, 23, 23);
-    }
+footer.foot {
+    height: 2rem;
+    position: absolute;
+    /* bottom: 0; */
+    width: 100%;
+    margin-right: 10rem;
 
-    /* @media screen and (max-width:1440px){
+}
+
+#userbox{
+    border:solid;
+}
+#partybox {
+    border:solid;
+}
+#bills-pc{
+    border:solid;
+}
+
+.text {
+    color: white;
+    margin-top: 10rem;
+}
+
+.menu {
+    margin: 0rem 5rem 0rem 15rem;
+}
+
+.power {
+    margin-top: 10rem;
+}
+
+
+.card-horizontal {
+    background: rgb(235, 23, 23);
+}
+
+/* @media screen and (max-width:1440px){
         html {
             width: 288%;
             height:100%;

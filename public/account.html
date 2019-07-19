@@ -42,8 +42,12 @@
     <!-- nav bar -->
     <nav>
         <div class="nav-wrapper red">
-            <div class="nav-wrapper ">
-                <a class="brand-logo white-text right">Account</a>
+            <div class="container">
+                <div class="nav-wrapper ">
+                    <a class="waves-effect waves-light grey darken-4 btn-small" href="../public/index.html">Main
+                        Menu</a>
+                    <a class="brand-logo white-text right">Account</a>
+                </div>
     </nav>
 
 
@@ -52,7 +56,8 @@
     <div class="container" id="account-card">
         <div class="row">
             <div class="col s12 m6">
-                <div class="card-horizontal text center-align"><i class="material-icons large">account_circle</i>
+                <div class="card-horizontal text center-align" id="userbox"><i
+                        class="material-icons large">account_circle</i>
 
 
 
@@ -65,39 +70,41 @@
     </div>
 
     <div class="container" id="account-card">
-            <div class="row">
-                <div class="col s12 m6">
-                    <div class="card-horizontal text center-align grey">
-    
-    
-    
-                        <h1>Pokemon Party </h1>
-                        <p>Hardy </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                    <div class="col s12 m6">
-                        <div class="card-horizontal text center-align grey">
-        
-        
-        
-                            <h1>Bill's PC</h1>
-                            <p>Pokemon </p>
-                        </div>
-                    </div>
-                </div>
-    
-        </div>
-
         <div class="row">
-            <div class="col s12">
+            <div class="col s12 m6">
+                <div class="card-horizontal text center-align grey" id="partybox">
 
-                <a class="power right-align red darken-4 btn-small right z-depth-5 pulse" href="#!"><i
-                        class="fas fa-caret-right"></i>
-                    Start</a>
+
+
+                    <h1>Pokemon Party </h1>
+                    <p>Hardy</p>
+                </div>
             </div>
         </div>
+
+        <div class="row" <div class="col s12 m6">
+            <div class="card-horizontal text center-align grey" id="bills-pc">
+
+
+
+                <h1>Bill's PC</h1>
+                <p>Pokemon </p>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+
+                <a class="power right-align grey darken-4 btn-small right z-depth-5 pulse" href="#!"><i
+                        class="fas fa-caret-right"></i>Start</a>
+
+            </div>
+        </div>
+    </div>
+
     </div>
     <div class="container">
         <div class="row">
@@ -113,7 +120,7 @@
 
     <!-- footer -->
     <footer class="foot">
-        <a class="waves-effect waves-light red darken-4 btn-small" href="../public/index.html">Main Menu</a>
+
     </footer>
 
     <!-- javascript -->
