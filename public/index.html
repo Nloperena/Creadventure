@@ -26,96 +26,76 @@
 <body>
 
     <!-- nav bar -->
-    <nav id="stickynav">
-        <div class="nav-wrapper orange">
-            <div class="nav-wrapper">
-
-                <a href="#!" class="brand-logo black-text center"><img id="logoSprite"
-                        src="../public/images/a672c7ce2caaf4f.png" class="responsive-image">Creadventure</a>
-                <!-- Modal Trigger -->
-                <a class="btn-large grey btn modal-trigger " id="loginButton" href="#modal1">Login</a>
-                <!-- ---------------------------------------------MODAL LOGIN------------------------------------------------------>
-                <div id="modal1" class="modal modal-fixed-footer">
-                    <div class="center modal-content black-text">
-                        <h4>Enter Account Information</h4>
-                        <div class="container">
-                            <div class="row">
-                                <form class="col s12 m12 12 l12">
-                                    <div class="row">
-
-                                        <div class="input-field col s6">
-                                            <input id="username" type="text" class="validate">
-                                            <label class="black-text" for="Username">Username</label>
+    <nav>
+            <div class="nav-wrapper orange">
+                <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo black-text center "><img id="logoSprite"
+                            src="../public/images/a672c7ce2caaf4f.png">Creadventure</a>
+                    <!-- Modal Trigger -->
+                    <!-- <a class="btn-large grey btn modal-trigger " id="loginButton" href="#modal1">Login</a> -->
+                    <!-- ---------------------------------------------MODAL LOGIN------------------------------------------------------>
+                    <!-- <div id="modal1" class="modal modal-fixed-footer">
+                        <div class="center modal-content black-text">
+                            <h4>Enter Account Information</h4>
+                            <div class="container">
+                                <div class="row">
+                                    <form class="col s12">
+                                        <div class="row">
+    
+                                            <div class="input-field col s6">
+                                                <input id="login-username" type="text" class="validate">
+                                                <label class="black-text" for="Username">Username</label>
+                                            </div>
                                         </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="input-field col s12">
-                                            <input id="password" type="password" class="validate">
-                                            <label class="black-text" for="password">Password</label>
+    
+                                        <div class="row">
+                                            <div class="input-field col s12">
+                                                <input id="login-password" type="password" class="validate">
+                                                <label class="black-text" for="password">Password</label>
+                                            </div>
                                         </div>
-                                    </div>
-
-                                    <br>
-                                    <div class="row">
-                                        <div class="col-m6"> <a class="waves-effect waves-light btn-large grey"><i
-                                                    class="material-icons right">account_circle</i>Login</a>
+    
+                                        <br>
+                                        <div class="row">
+                                            <div class="col-m6"> <a class="waves-effect waves-light btn-large grey"><i
+                                                        class="material-icons right">account_circle</i>Login</a>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="row">
-                                        <a class="waves-effect waves-light btn-large grey"><i
-                                                class="material-icons right">create</i>Sign up</a>
-                                    </div>
+                                </div>
                             </div>
+                            </form>
                         </div>
-                        </form>
-                    </div>
+    
+    
+                    </div> -->
+                    <!-- ---------------------------------SIGN UP--------------------------- -->
+                    <!-- Modal Trigger -->
+                    <a class="btn-large grey btn modal-trigger " id="loginButton" href="#modal2">Sign Up/Log In</a>
+                    <!-- ---------------------------------------------MODAL Sign UP------------------------------------------------------>
+                    <div id="modal2" class="modal modal-fixed-footer">
+                        <div class="center modal-content black-text">
+                            <h4>Create Account Information</h4>
+                            <div class="container">
+                                <div class="row">
+                                    <form action="submit" method="post" id="signup">
+                                        <h1>SIGN UP!</h1><br>
+                                        Username:
+                                        <input type="text" id="signup-username"><br>
+                                        Password:
+                                        <input type="text" id="signup-password">
 
 
-                </div>
-                <!-- ---------------------------------SIGN UP--------------------------- -->
-                <!-- Modal Trigger -->
-                <div class="row">
-                    <a class="btn-large grey btn modal-trigger " id="loginButton" href="#modal2">Sign Up</a>
-                </div>
-                <!-- ---------------------------------------------MODAL LOGIN------------------------------------------------------>
-                <div id="modal2" class="modal modal-fixed-footer">
-                    <div class="center modal-content black-text">
-                        <h4>Create Account Information</h4>
-                        <div class="container">
-                            <div class="row">
-                                <form class="col s12">
-                                    <div class="row">
+                                        <button class="btn waves-effect waves-light" type="button" value="Submit" id="submit-signup">Sign UP!</button>
+                                        
+                                       
 
-                                        <div class="input-field col s6">
-                                            <input id="sign-up-username" type="text" class="validate">
-                                            <label class="black-text" for="Username">Username</label>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="input-field col s12">
-                                            <input id="sign-up-password" type="password" class="validate">
-                                            <label class="black-text" for="password">Password</label>
-                                        </div>
-                                    </div>
-
-
-
-                                    <div class="row">
-                                        <a class="waves-effect waves-light btn-large grey"><i
-                                                class="material-icons right">create</i>Sign up</a>
-                                    </div>
-                            </div>
+                                        <button class="btn waves-effect waves-light" type="button" value="Submit" id="submit-login">Log In!</button>    
+                                    </form>
                         </div>
                     </div>
                 </div>
-                </form>
-            </div>
-        </div>
-        </div>
-    </nav>
-
+        </nav>
+    
 
 
     <div class="parallax-container">
