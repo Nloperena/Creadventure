@@ -1,9 +1,14 @@
 <h1>pokeman</h1>
-<div id="appendHere">
-
+<div id="appendHere"></div>
+<h2>billsPc</h2>
+<div id="billspc"></div>
+<div>
+<button id="catchbtn">catch!</button>
 </div>
 
+
 <script>
+    var user = "Nico"
     var oppJSON 
     var opp
     var natures = []
@@ -33,6 +38,7 @@
             console.log(opp)
 
             renderMonster(opp)
+            renderAlly(opp)
 
         })
         
@@ -40,10 +46,25 @@
 
 
     function renderMonster(obj){
-        var $image = $("img").first();
-        var image = $("<img>").attr("src", "/../public/images/platinum/"+obj.pokedex_number+".png")
-        
-        $("#appendHere").append($image)
+        if(obj.isShiny){
+        var url = "/images/platinum/shiny/"+obj.pokedex_number+".png"
+        }
+        else{
+        var url = "/images/platinum/"+obj.pokedex_number+".png"
+        }
+        var image = $("<img>").attr("src", url)
+        $("#appendHere").append(image)
+    }
+
+    function renderAlly(obj){
+        if(obj.isShiny){
+        var url = "/images/platinum/back/shiny/"+obj.pokedex_number+".png"
+        }
+        else{
+        var url = "/images/platinum/back/"+obj.pokedex_number+".png"
+        }
+        var image = $("<img>").attr("src", url)
+        $("#appendHere").append(image)
     }
 
 
@@ -62,4 +83,28 @@
         }
 
     }
+
+    $("#catchbtn").on("click", function(opp,user){
+        $.ajax("/api/caught/" + user, {
+                            type: "POST",
+                            data: opp
+                        }).then(
+                            function(data) {
+                                console.log(data)
+                                // Reload the page to get the updated list
+                                //location.reload();
+                            }
+                        );
+    })
+
+    billsPc(user)
+    function billsPc(query){
+        $.ajax({
+                url:"/api/billspc/"+query, 
+                type: "GET",
+            }).then(function(data){
+                console.log(data)
+        })
+    }
+
 </script>
