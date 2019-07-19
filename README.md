@@ -1,3 +1,5 @@
+![Image of Site](public/images/readMe.jpg)
+
 # CREADVENTURE
 
 ## Welcome to the world of Creadventure
