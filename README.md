@@ -12,7 +12,7 @@ To play this game:
 
 ## About the Development Team:
 
-### Meet the Swag Rangers
+### Meet the Rangers
 
 * #### Red Ranger: Nico Loperena https://www.facebook.com/nico.loperena
 * #### Pink Ranger: Delane Chen https://dylvne.github.io/Bootstrap-Portfolio/
