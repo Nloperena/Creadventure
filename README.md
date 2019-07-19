@@ -1,5 +1,12 @@
 ![Image of Site](public/images/readMe.jpg)
 
+
+- [CREADVENTURE](#creadventure)
+    - [Welcome to the world of Creadventure](#welcome-to-the-world-of-creadventure)
+        - [Game Play](#game-play)
+    - [About the Development Team](#about-the-development-team)
+        - [Meet the Rangers](#meet-the-rangers)
+
 # CREADVENTURE
 
 ## Welcome to the world of Creadventure
