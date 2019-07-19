@@ -29,10 +29,33 @@ module.exports = function(app) {
     }).then(function(data){res.json(data)})
   })
 
+  app.post("/api/caught/:user", function(req,res){
+    db.pc.create({
+      pokedex_number: req.body.pokedex_number,
+      name: req.body.name,
+      owner: req.params.user,
+      isShiny: req.body.isShiny,
+      type1: req.body.type1,
+      type2: req.body.type2,
+      nature: req.body.nature,
+      hp: req.body.hp,
+      attack: req.body.attack,
+      defense: req.body.defense,
+      speed: req.body.speed,
+      sp_attack: req.body.sp_attack,
+      sp_defense: req.body.sp_defense,
+    })
+  })
 
   app.get("/api/wildPokemon", function(req, res){
     let randomNum = Math.floor(Math.random()*493 +1)
     db.pokedex.findAll({where:{pokedex_number:randomNum}}).then(function(data){
+      res.json(data)
+    })
+  })
+
+  app.get("/api/billspc/:user", function(req, res){
+    db.pc.findAll({where:{owner:req.params.user}}).then(function(data){
       res.json(data)
     })
   })
